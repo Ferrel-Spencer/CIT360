@@ -1,3 +1,5 @@
+package CollectionsBeansAndJunit;
+
 import java.io.Serializable;
 
 /**
@@ -17,7 +19,7 @@ public class fishBean implements Serializable {
         return this.name;
     }
 
-    public String getTankNumber(){ //this takes the tank number of the fishBean and returns the associated tankNumber
+    public String getTankNumber(){ //this takes the tank number of the CollectionsBeansAndJunit.fishBean and returns the associated tankNumber
         return this.tankNumber;
     }
 
