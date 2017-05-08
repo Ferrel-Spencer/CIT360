@@ -1,4 +1,4 @@
-//importing all of the needed utilities
+package CollectionsBeansAndJunit;//importing all of the needed utilities
 
 import java.util.HashMap;
 import java.util.TreeMap;
@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 
 /**
- * Created by ferre on 5/5/2017. This class implements fishBean and adds in a hashMap containing multiple fish
+ * Created by ferre on 5/5/2017. This class implements CollectionsBeansAndJunit.fishBean and adds in a hashMap containing multiple fish
  */
 
 
@@ -17,7 +17,7 @@ public class fishTank {
     TreeMap <String, String> fishDirectory; //creating a TreeMap that holds the info of where a fish is located
     ArrayList<String> fishList;
 
-    //this is the constructor for the fishTank class that initializes the HashMap, TreeMap, and ArrayList
+    //this is the constructor for the CollectionsBeansAndJunit.fishTank class that initializes the HashMap, TreeMap, and ArrayList
     public fishTank() {
         fishTank = new HashMap<String, fishBean>(); //constructor of class that builds the HashMap
         fishDirectory = new TreeMap<String, String>(); //constructor that builds a TreeMap
