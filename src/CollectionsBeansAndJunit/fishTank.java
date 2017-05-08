@@ -78,9 +78,9 @@ public class fishTank {
         for(String akey : sortedKeys){
             String tankNumber = fishDirectory.get(akey);
             tankNumberBuffer.append(akey);
-            tankNumberBuffer.append(" - ");
+            tankNumberBuffer.append("  tank number: #");
             tankNumberBuffer.append(tankNumber);
-            tankNumberBuffer.append("; ");
+            tankNumberBuffer.append("\n");
         }
         return tankNumberBuffer.toString();
     }
