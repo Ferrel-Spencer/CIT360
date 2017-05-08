@@ -1,6 +1,7 @@
-
+package CollectionsBeansAndJunit;
 //Importing all needed utilities
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,14 +12,14 @@ import static org.junit.Assert.assertNull;
  * Created by ferre on 5/5/2017.
  */
 public class testFishTank {
-    fishTank testfishTank; //creating instance of fishTank named testfishTank
+    fishTank testfishTank; //creating instance of CollectionsBeansAndJunit.fishTank named testfishTank
     fishBean finny,glib, glub, speed, ropey; // creating instances of FishBean named repectivly
 
 
 
     @Before
     public void setup() throws Exception{
-        testfishTank = new fishTank(); //initializing testFishTank
+        testfishTank = new fishTank(); //initializing CollectionsBeansAndJunit.testFishTank
         testfishTank.fishList.clear();
 
         finny = new fishBean("Spotted Catfish","Finny","Green with black spots","1"); //initilizing the FishBean with the required fields
@@ -53,9 +54,9 @@ public class testFishTank {
         testfishTank.fishTank.put("Glib", glib);
 
         fishBean finnyFromMap = testfishTank.getFish("Finny"); //testing get fish by searching for key "Finny"
-        assertEquals(finny,finnyFromMap); //Testing to see if finny from map (the test) is the same as finny the FishBean object in the hashmap
+        Assert.assertEquals(finny,finnyFromMap); //Testing to see if finny from map (the test) is the same as finny the FishBean object in the hashmap
         fishBean glibFromMap = testfishTank.getFish("Glib");
-        assertEquals(glib,glibFromMap);
+        Assert.assertEquals(glib,glibFromMap);
 
         fishBean notaFish = testfishTank.getFish("Spot the dog"); //testing to see if a non fish can be pulled in the hashmap
         assertNull(notaFish);//testing to see if the non fish is in the hashmap
