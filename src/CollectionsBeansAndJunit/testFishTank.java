@@ -17,6 +17,7 @@ public class testFishTank {
 
 
 
+
     @Before
     public void setup() throws Exception{
         testfishTank = new fishTank(); //initializing CollectionsBeansAndJunit.testFishTank
@@ -78,6 +79,7 @@ public class testFishTank {
         testfishTank.fishDirectory.put("Speed",speed.getTankNumber());
         Tanknumber = testfishTank.fishDirectory.size();
         assertEquals(2, Tanknumber);
+        System.out.printf(testfishTank.getFishDirectory());
 
         testfishTank.fishDirectory.clear();
     }
