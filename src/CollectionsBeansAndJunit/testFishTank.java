@@ -5,8 +5,9 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
+import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.assertNull;
+
 
 /**
  * Created by ferre on 5/5/2017.
@@ -14,9 +15,6 @@ import static org.junit.Assert.assertNull;
 public class testFishTank {
     fishTank testfishTank; //creating instance of CollectionsBeansAndJunit.fishTank named testfishTank
     fishBean finny,glib, glub, speed, ropey; // creating instances of FishBean named repectivly
-
-
-
 
     @Before
     public void setup() throws Exception{
@@ -131,6 +129,9 @@ public class testFishTank {
 
 
     }
+
+
+
 
 
 }
