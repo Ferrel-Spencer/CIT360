@@ -1,6 +1,5 @@
 package ThreadsRunnersAndExecutors;
 
-
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -21,7 +20,7 @@ public class executor{
                     System.out.println("HoLa");
                     Thread.currentThread().sleep(200);
                 }catch (Exception e){
-                        //leaving this blank.
+                        //leaving this blank not really looking for anything in particular.
                     }
             }});
         }
