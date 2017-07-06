@@ -2,8 +2,6 @@
   <library name="src">
     <CLASSES />
     <JAVADOC />
-    <SOURCES>
-      <root url="file://$USER_HOME$/Downloads/qcJSON-master/qcJSON-master/src" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>

@@ -7,6 +7,13 @@
         <element id="directory" name="classes">
           <element id="module-output" name="CIT360" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="junit:junit:4.12" />
+          <element id="library" level="project" name="Hibernate 5.2.9-5.2.9" />
+          <element id="library" level="project" name="JsonProcessing" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/json-simple-1.1.1.jar" />
+          <element id="file-copy" path="$USER_HOME$/Desktop/CIT360/json-simple-1.1.1.jar" />
+        </element>
       </element>
     </root>
   </artifact>
