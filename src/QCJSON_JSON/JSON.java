@@ -11,7 +11,7 @@ import java.io.StringWriter;
 
 /**
  * Created by SFerrel on 7/6/2017. Found this example at--> https://www.tutorialspoint.com/json/json_java_example.htm
- * I've been playing with it and changing the values in it to understand what happens
+ * I rewrote this to understand what is happening
  */
 public class JSON {
     public static void main(String[] args) throws IOException, ParseException {
@@ -49,11 +49,11 @@ public class JSON {
             System.out.println(obj3.get("One"));
 
 
-            list = "{     }"; // not sure what this does here I believe this is a map
+            list = "{     }";
             obj2 = parser.parse(list);
             System.out.println(obj2);
 
-            list = "[\"Five\", \" Oh \"]"; // okay so anything string wise needs to have \" \" which turns into "" to get it to be parsed. I think this is the array
+            list = "[\"Five\", \" Oh \"]";
             obj2 = parser.parse(list);
             System.out.println(obj2);
 
